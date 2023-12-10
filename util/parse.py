@@ -2,7 +2,7 @@ import re
 
 
 def first_int(string):
-    return int(re.search(r'[+-]?\d+', string).group())
+    return ints(string)[0]
 
 
 def ints(string):
