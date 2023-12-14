@@ -1,3 +1,12 @@
+def print_grid(grid):
+    for row in grid:
+        print(''.join(row))
+
+
+def hash_grid(grid):
+    return hash(tuple(tuple(row) for row in grid))
+
+
 def exists(grid, pos):
     row, col = pos
     return 0 <= row < len(grid) and 0 <= col < len(grid[row])
